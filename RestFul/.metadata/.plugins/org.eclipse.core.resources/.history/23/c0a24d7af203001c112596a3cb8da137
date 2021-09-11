@@ -1,0 +1,9 @@
+package deb.lip.rest;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BookRestController {
+
+	public 
+}

@@ -1,0 +1,5 @@
+package deb.lip.bindings;
+
+public class Product {
+
+}

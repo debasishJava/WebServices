@@ -1,0 +1,2 @@
+server.port=9913
+management.endpoints.web.exposure.include='*'

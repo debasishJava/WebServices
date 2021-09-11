@@ -1,0 +1,20 @@
+package deb.lip.bindings;
+
+import org.springframework.hateoas.RepresentationModel;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode(callSuper=false)
+public class Book extends RepresentationModel<Book> {
+
+	private String isbn;
+	private String bookName;
+	private Double bookPrice;
+	private String author;
+}

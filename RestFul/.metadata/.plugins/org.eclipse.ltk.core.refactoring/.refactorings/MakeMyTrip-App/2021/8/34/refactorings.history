@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;TicketService.java&apos; to &apos;MakeMyTrip-App/src/main/java/in.coforge.service&apos;&#x0D;&#x0A;- Original project: &apos;MakeMyTrip-App&apos;&#x0D;&#x0A;- Destination element: &apos;MakeMyTrip-App/src/main/java/in.coforge.service&apos;&#x0D;&#x0A;- Original element: &apos;in.coforge.config.TicketService.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.coforge.service" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.coforge.config{TicketService.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1629404355142" units="1" version="1.0"/>
+</session>

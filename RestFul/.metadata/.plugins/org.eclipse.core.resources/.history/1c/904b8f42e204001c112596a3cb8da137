@@ -1,0 +1,22 @@
+package deb.lip.rest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import deb.lip.config.MonoService;
+
+@RestController
+public class Mono_RestController {
+
+	@Autowired
+	private MonoService service;
+	
+	@GetMapping(
+			  value = "/productList",
+			  produces = "application/json"
+			)
+	public String getAllProducts() {
+		return service.productAPI();
+	}
+}

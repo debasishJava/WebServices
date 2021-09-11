@@ -1,0 +1,28 @@
+package deb.lip.config;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+import org.springframework.web.reactive.function.client.WebClient.Builder;
+
+@Service
+public class MonoService {
+
+	public String productAPI() {
+		String url="http://localhost:9091/products";
+		Builder builder=WebClient.builder();
+		WebClient client=builder.build();
+		
+		 String res=client.get()
+				          .uri(url)
+				          .retrieve()
+				          .bodyToFlux(String.class)
+				          .subscribe();
+		
+		return res;
+	}
+	
+	public static String handlerMethod(String str) {
+		System.out.println(str);
+		return str;
+	}
+}

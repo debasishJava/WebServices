@@ -1,0 +1,28 @@
+package deb.lip.config;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import reactor.core.Disposable;
+
+@Service
+public class MonoService {
+
+	public String productAPI() {
+		String url="https://quoters.apps.pcfone.io/api/random";
+		
+		WebClient client=WebClient.create();
+		
+		  client.get()
+				.uri(url)
+				.retrieve()
+				.bodyToMono(String.class)
+				.subscribe(MonoService::handlerMethod);
+		
+		return "success......";
+	}
+	
+	public static String handlerMethod(String str) {
+		return str;
+	}
+}

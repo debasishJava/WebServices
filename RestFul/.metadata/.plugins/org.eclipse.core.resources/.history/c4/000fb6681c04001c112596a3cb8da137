@@ -1,0 +1,13 @@
+server:
+  port: 9091
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    password: tiger
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    username: scott
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
